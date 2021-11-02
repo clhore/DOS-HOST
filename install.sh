@@ -52,5 +52,5 @@ if [ "$(id -u)" == "0" ]; then
 	dependencies
 	installPythonLibrary
 else
-	echo -e 'chmod +x ./install.sh && sudo ./install.sh'
+	echo -e 'sudo chmod +x ./install.sh && sudo ./install.sh'
 fi
