@@ -13,13 +13,6 @@ declare -r grayColour="\e[0;37m\033[1m"
 # Global Variables
 declare -r pythonLibrary=(termcolor)
 
-
-function installPanel(){
-   
-    echo -e "\n${redColour}[!] Usage: ./htbExplorer${endColour}"
-    for i in $(seq 1 80); do echo -ne "${redColour}-"; done; echo -ne "${endColour}"
-}
-
 function dependencies(){
 	clear
 
