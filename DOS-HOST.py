@@ -8,8 +8,6 @@ from termcolor import colored, cprint
 from os import system, mkdir
 from time import sleep
 
-# custom modules
-
 # Global variables
 banner = colored('''
 
