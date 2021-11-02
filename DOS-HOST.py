@@ -40,7 +40,7 @@ def modeMonitor(nic: str, mode=False):
         mon0 = 'ip link set {0} up 2>/dev/null'.format(nic.replace('mon', ''))
         system(mon0)
         sleep(1)
-        cprint(f'[*] Inteface {nic} up', 'green')
+        cprint(f'[*] Inteface {nic.replace('mon', '')} up', 'green')
 
 
 def scanWIFIs(nic: str):
