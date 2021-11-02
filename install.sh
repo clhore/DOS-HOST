@@ -12,14 +12,13 @@ declare -r grayColour="\e[0;37m\033[1m"
 
 # Global Variables
 declare -r pythonLibrary=(termcolor)
+declare -r dependencies=(python aircrack-ng)
 
 function dependencies(){
 	clear
 
 	echo -e "\n"
 	read -rp "Cual es su OS >> Arch Linux[a/A] or Ubuntu[u/U]: " sys
-	
-	dependencies=(python aircrack-ng)
 
 	for program in "${dependencies[@]}"; do
 		echo -ne "\n\t${yellowColour}[*]${endColour}${blueColour} Herramienta${endColour}${purpleColour} $program${endColour}${blueColour}...${endColour}"
