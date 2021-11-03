@@ -12,7 +12,7 @@ declare -r grayColour="\e[0;37m\033[1m"
 
 # Global Variables
 declare -r pythonLibrary=(termcolor)
-declare -r dependencies=(python aircrack-ng)
+declare -r dependencies=(python3 aircrack-ng)
 
 function dependencies(){
 	clear
