@@ -44,7 +44,6 @@ function dependencies(){
 function installPythonLibrary(){
 	for library in "${pythonLibrary[@]}"; do
 		pip install $library 2>/dev/null
-		pip3 install $library 2>/dev/null
 	done
 }
 
