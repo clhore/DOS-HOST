@@ -12,7 +12,7 @@ declare -r grayColour="\e[0;37m\033[1m"
 
 # Global Variables
 declare -r pythonLibrary=(termcolor)
-declare -r dependencies=(python3 aircrack-ng)
+declare -r dependencies=(aircrack-ng)
 
 function dependencies(){
 	clear
@@ -44,6 +44,7 @@ function dependencies(){
 function installPythonLibrary(){
 	for library in "${pythonLibrary[@]}"; do
 		pip install $library 2>/dev/null
+		pip3 install $library 2>/dev/null
 	done
 }
 
